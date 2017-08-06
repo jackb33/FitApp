@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 import android.widget.Button;
 import android.widget.Switch;
+import android.content.Intent;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         newMealButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent newMealIntent = new Intent(getApplicationContext(), NewMealActivity.class);
+                startActivity(newMealIntent);
             }
         });
 
@@ -28,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         dailyStatButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent dailyStatIntent = new Intent(getApplicationContext(), DailyStatsActivity.class);
+                startActivity(dailyStatIntent);
             }
         });
 
@@ -36,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         createFoodButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent createFoodIntent = new Intent(getApplicationContext(), CreateFoodActivity.class);
+                startActivity(createFoodIntent);
             }
         });
 
@@ -44,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         calculatorButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent calculatorIntent = new Intent(getApplicationContext(), CalculatorActivity.class);
+                startActivity(calculatorIntent);
             }
         });
 
@@ -52,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
         unitTableButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent unitTableIntent = new Intent(getApplicationContext(), UnitTableActivity.class);
+                startActivity(unitTableIntent);
             }
         });
 
@@ -60,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
         recipesButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent recipesIntent = new Intent(getApplicationContext(), RecipesActivity.class);
+                startActivity(recipesIntent);
             }
         });
 
